@@ -1,0 +1,18 @@
+SELECT city FROM customers 
+SELECT id, name FROM customers LIMIT 5, 10;
+SELECT name FROM customers ORDER BY name;
+SELECT name FROM customers WHERE city = "stamford";
+SELECT id, name, city FROM customers WHERE (id = 1 OR id = 2) AND city = "Raleigh" 
+SELECT name, state FROM customers WHERE state IN ("CA", "NC", "NY")
+SELECT name, state FROM customers WHERE state IN ("CA", "NC", "NY") ORDER BY state;
+SELECT name FROM items WHERE name LIKE "new%";
+SELECT name FROM items WHERE name LIKE "%computer%"
+SELECT city FROM customers WHERE city LIKE "h%d"  // city between h and d
+SELECT name FROM items WHERE name LIKE "_ boxes of frogs"
+SELECT name FROM items WHERE name REGEXP "new" // get expression from new 
+SELECT name FROM items WHERE name REGEXP "[12345] boxes of frogs"
+SELECT CONCAT(city, "," , state) AS new_address FROM customers
+SELECT UPPER(name) FROM customers
+SELECT cost, SQRT(cost) FROM items
+SELECT name FROM items WHERE seller_id = 6
+SELECT COUNT(*) AS item_count, MAX(cost) AS MAX, AVG(cost)AS AVG FROM items WHERE seller_id = 12
