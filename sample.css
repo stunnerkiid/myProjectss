@@ -1,0 +1,23 @@
+*
+{
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+body
+{
+	text-align:center;
+	font-size:8pt;
+	font-family: Verdana,Arial, Helvetica, sans-serif, "bitstream vera sans";
+	color:#515151;
+	background: url(images/bggradient.jpg) no-repeat;
+	background-color: #E5FFFF;
+	 background: -webkit-linear-gradient( #FFE13C, #E5FFFF);
+}
+#container
+{
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;;
+}
